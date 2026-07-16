@@ -1,0 +1,8 @@
+services:
+  scraper:
+    build: .
+    container_name: web-scraping-data-extraction
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: "no"
